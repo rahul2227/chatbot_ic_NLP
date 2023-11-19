@@ -1,16 +1,7 @@
 # chatbot_ic
 
-A new Flutter project.
+NLP project for creating a chatbot using machine Learning techniques.
 
-## Getting Started
+The Front-End of the project will be created in flutter, which is a cross-platform software development toolkit.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Main focus of this project will be the back-end where we will host our machine learning model for NLP tasks.
