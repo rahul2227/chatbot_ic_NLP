@@ -1,3 +1,4 @@
+import 'package:chatbot_ic/Helpers/colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,10 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-        useMaterial3: true,
+        // colorScheme: ColorScheme.fromSeed(seedColor: primaryBlack),
+        // primaryColor: Colors.black,
+        primarySwatch: primaryBlack,
+        useMaterial3: false,
       ),
-      home: const MyHomePage(title: 'Vasu Learning'),
+      home: const MyHomePage(title: 'Chatbot'),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -50,7 +53,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: const TextStyle(color: Colors.black),
+        ),
       ),
       body: Center(
         child: Column(

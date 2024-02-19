@@ -1,0 +1,39 @@
+# Working pipeline
+
+This project you can take only 2 consideration approaches
+
+1. Augmentation (RAG Model)
+2. Fine-Tuning Model
+
+## Augmentation
+
+### Data Acquisition
+
+- Get the data.
+
+### Data Retrieval
+
+- Tokenize the data(just abstract) / metadata
+- Upload it in a vector DB (OpenSearch) (metadata file and abstract tokenized CSV)
+- once you tokenize abstract then consider a strategy to make abstract vectors the same length so that it can be fed to the Pre-trained Model(This is called chunking strategy)
+- How do you upload it to OpenSearch is you see it on Google.
+  - Now if you have a question then you can query the DB to get the TOP 5 relevant articles
+  - The TOP 5 articles are based on similarity scores
+- What is a RAG model (Retrieval Augmented Generation)?
+
+### Data Generation
+
+- We use a pre-trained model here, pass the TOP article(context) with the question in this model.
+- Now the pre-trained model will answer my question
+
+### Data Evaluation
+
+- In this step we check if the answer is true one.
+- Because we don't have any actual ground truth data we use trained models like Chat-GPT to get a ground truth data and then cross validate our models answer with the chat-GPT one
+  - To do this we will pass the same question and article to our model and chat-GPT
+
+## Fine-Tuning Model
+
+Fine tuning is retraining the model
+
+- So basically you get a pre-trained model and then you pass it all the articles.
