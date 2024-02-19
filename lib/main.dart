@@ -1,3 +1,4 @@
+import 'package:chatbot_ic/Helpers/chatUtilities.dart';
 import 'package:chatbot_ic/Helpers/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // colorScheme: ColorScheme.fromSeed(seedColor: primaryBlack),
         // primaryColor: Colors.black,
-        primarySwatch: primaryBlack,
+        primarySwatch: createMaterialColor(dullBlack),
+        scaffoldBackgroundColor: createMaterialColor(dullBlack),
         useMaterial3: false,
       ),
       home: const MyHomePage(title: 'Chatbot'),
@@ -34,51 +36,53 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  void _decrementCounter() {
-    setState(() {
-      _counter--;
-    });
-  }
-
+  List boxList = [
+    ChatStartBoxButton(),
+    ChatStartBoxButton(),
+    ChatStartBoxButton(),
+    ChatStartBoxButton(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(
           widget.title,
-          style: const TextStyle(color: Colors.black),
+          style: const TextStyle(color: dullWhtie),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            ElevatedButton(
-                onPressed: _decrementCounter,
-                child: const Icon(Icons.add_box_outlined))
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      body: ListView(
+        // mainAxisAlignment: MainAxisAlignment.spaceAround,
+        // crossAxisAlignment: CrossAxisAlignment.start,
+        padding: const EdgeInsets.all(8.0),
+        scrollDirection: Axis.vertical,
+        children: <Widget>[
+          SizedBox(
+            height: MediaQuery.of(context).size.width / 2,
+            child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[...boxList]),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.width / 2,
+            child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[...boxList]),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.width / 2,
+            child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[...boxList]),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.width / 2,
+            child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[...boxList]),
+          ),
+        ],
       ),
     );
   }
