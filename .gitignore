@@ -44,4 +44,4 @@ app.*.map.json
 /android/app/release
 
 # Removing the folder with chroma vector db
-lib/backend/data/chroma_data
+/lib/backend/data/chroma_data
