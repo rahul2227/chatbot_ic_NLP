@@ -5,7 +5,7 @@ from chromadb import Client
 from chromadb.utils import embedding_functions
 
 # Specify the path to your JSON file
-json_file_path = '/Users/vasu/Desktop/project/chatbot_ic_NLP/lib/NLP-Models/2013pubmed.json'
+json_file_path = '/Users/vasu/Desktop/NLP /project/chatbot_ic_NLP/lib/NLP-Models/2013pubmed.json'
 
 # Open the JSON file and load the data
 with open(json_file_path, 'r') as json_file:
