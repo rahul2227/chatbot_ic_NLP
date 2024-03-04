@@ -45,3 +45,6 @@ app.*.map.json
 
 # Removing the folder with chroma vector db
 lib/backend/data/chroma_data
+
+# Removing the folder with offload(weight and biasis) data
+lib/backend/language_models/offload/
