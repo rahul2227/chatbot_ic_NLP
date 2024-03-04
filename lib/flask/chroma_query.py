@@ -10,13 +10,13 @@ def get_context_with_max_similarity(user_question):
 
         print(chroma_internet_client.list_collections())
 
-        # Access the '2013pubmed' collection
-        collection_2013 = chroma_internet_client.get_collection('2013pubmed')
+        # Access the 'pubmed_whole' collection
+        collection_2013 = chroma_internet_client.get_collection('pubmed_whole')
 
 
 
         # Initialize SentenceTransformer model
-        sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="multi-qa-MiniLM-L6-cos-v1", normalize_embeddings=True)
+        sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L12-v2", normalize_embeddings=True)
 
         # Embed the user's question
         user_question_embedding = sentence_transformer_ef([user_question])[0]

@@ -1,7 +1,33 @@
-# chatbot_ic
+# Cellio
 
-NLP project for creating a chatbot using machine Learning techniques.
+Cellio is a RAG system that offers query transformed context retrieval to enhance both the density and quality of retrieved data, over pubmed data
 
-The Front-End of the project will be created in flutter, which is a cross-platform software development toolkit.
+This project was submitted for the Course Natural Language Processing with Transformers
 
-Main focus of this project will be the back-end where we will host our machine learning model for NLP tasks.
+## Group Members
+
+Vasu Thakur - vt0299
+
+Rahul Sharma - rahul2227
+
+Vikas Kumar Roy - VikasRoy-21
+
+## Getting Started
+
+- Create a Conda environment
+
+```
+conda create --name nlp python
+conda activate nlp
+cd lib/backend
+pip install -r requirements-conda.txt
+```
+
+> if you're using a pip based environment use requirements-pip.txt
+
+## Executing the chat module by cmd
+(if you're in root folder of the project {chatbot_ic_nlp})
+```
+cd lib/backend/language_models/cellio.py
+python cellio.py
+```
