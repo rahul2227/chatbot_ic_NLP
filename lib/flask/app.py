@@ -87,7 +87,10 @@ def answer():
         context_with_max_similarity = get_context_with_max_similarity(user_question)
         
         # Generate an answer using Turbo based on the context with maximum similarity
-        answer = generate_answer(user_question, context_with_max_similarity)
+
+        new_context= generate_questions(context_with_max_similarity)
+        new=new_context+ context_with_max_similarity
+        answer = generate_answer(user_question,new)
         
         return render_template('answer.html', answer=answer)
 
@@ -96,6 +99,12 @@ def generate_answer(question, context):
     answer = llm_chain.run({'context': context, 'question': question})
     
     return answer
+
+def generate_questions(context):
+    # Generate questions based on the provided context
+    generated_questions = llm_chain.run({'context': context})
+    
+    return generated_questions
 
 if __name__ == '__main__':
     app.run(debug=True)
