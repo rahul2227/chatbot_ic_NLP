@@ -1,5 +1,28 @@
 ## Minutes of Meeting
 
+### 28 February
+
+-Evaluation score analysis 
+
+### 20 February
+
+-Evaluation of context and answers with gpt-3.5 and gpt 4
+
+### February 7
+
+-Command line interface Generation
+
+
+### January 29
+
+-turbo-3.5 analysis over queries
+-Other language model analysis
+
+### January 21
+
+-Multi query Retrieval for more precise output
+-ChromaDB collections online hosting 
+
 ### January 10
 
 - Work on Semantic search and study about flask backend creation
@@ -22,3 +45,5 @@
 - Flutter was selected as a front-end model as Rahul was proficient in it.
 - Flask and python was the obvious choice for backend and language models
 - OpenSearch was selected as a query DB
+
+

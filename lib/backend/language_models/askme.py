@@ -5,6 +5,8 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning, message="TypedStorage is deprecated.*")
 warnings.filterwarnings("ignore", category=UserWarning, message="LangChainDeprecationWarning: The function `run` was deprecated.*")
 
+import os
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 import chromadb
 from chromadb.utils import embedding_functions
@@ -48,35 +50,38 @@ sentence_transformer_ef = SentenceTransformer('all-MiniLM-L12-v2')
 # Turbo setup
 OPEN_API_KEY = "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"
 llm = OpenAI(api_key=OPEN_API_KEY)
-QUERY_PROMPT = PromptTemplate(
-    input_variables=["question", "context"],
+QUERY_PROMPT_MODEL = PromptTemplate(
+    input_variables=["context"],
+    template="""
+You are an AI language model assistant. Your task is to generate answer
+    by taking information from the relevant context provided from a vector 
+    database. By considering multiple perspectives on the user question, your goal is to help
+    the user understand the concept of the question asked that is also relevant to the context provided. 
+    Provide these answers with proper type setting.
+
+    Original question: {question}
+    Context : {context}
+""",)
+
+MULTI_QUERY_PROMPT_MODEL = PromptTemplate(
+    input_variables=["context"],
     template="""You are an AI language model assistant. Your task is to generate questions based on the provided context. 
     Generate list of 3 questions that help to explore different aspects of the context and deepen the understanding of the topic. 
     Provide these questions with proper type setting.
 
-    Context: {context}
-    """,
-)
-
-
-ANSWER_PROMPT = PromptTemplate(
-    input_variables=["context", "question"],
-    template="""You are an AI language model assistant. Your task is to generate an answer based on the provided context and user question. 
-
-    Context: {context}
-    Question: {question}
-    """,
-)
-
+    
+    Context : {context}
+""",)
 
 
 # Initialize the LLMChain
-llm_chain_query = LLMChain(prompt=QUERY_PROMPT, llm=llm)
-llm_chain_answer= LLMChain(prompt=ANSWER_PROMPT, llm=llm)
+
+llm_chain_multi_query= LLMChain(prompt=MULTI_QUERY_PROMPT_MODEL, llm=llm)
+llm_chain_answer = LLMChain(prompt=QUERY_PROMPT_MODEL, llm=llm)
 
 def generate_questions(context):
     # Generate questions based on the provided context
-    generated_questions = llm_chain_query.run({'context': context})
+    generated_questions = llm_chain_multi_query.run({'context': context})
     
     return generated_questions
 
@@ -89,6 +94,7 @@ def main():
             break
 
         context_with_max_similarity = get_context_with_max_similarity(user_question)
+
         generated_questions = generate_questions(context_with_max_similarity)
 
         
@@ -113,6 +119,8 @@ def main():
     
 
         new_context=context_with_max_similarity+q1_with_max_simialrity+q2_with_max_simialrity+q3_with_max_simialrity
+        
+        
         print("ANSWER")
         answer = llm_chain_answer.run({'context': new_context, 'question': user_question})
         print(answer)
