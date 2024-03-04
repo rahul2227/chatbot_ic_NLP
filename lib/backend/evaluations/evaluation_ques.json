@@ -1,0 +1,302 @@
+[
+    {
+        "id": 0,
+        "type": "yes_no",
+        "question": "Is diabetes categorized as a persistent ailment?"
+    },
+    {
+        "id": 1,
+        "type": "yes_no",
+        "question": "Does regular physical activity lower the likelihood of cardiovascular disease?"
+    },
+    {
+        "id": 2,
+        "type": "yes_no",
+        "question": "Is asthma recognized as a respiratory ailment?"
+    },
+    {
+        "id": 3,
+        "type": "yes_no",
+        "question": "Does smoking elevate the risk of lung cancer?"
+    },
+    {
+        "id": 4,
+        "type": "yes_no",
+        "question": "Is obesity linked to an increased risk of type 2 diabetes?"
+    },
+    {
+        "id": 5,
+        "type": "yes_no",
+        "question": "Can hypertension result in a stroke?"
+    },
+    {
+        "id": 6,
+        "type": "yes_no",
+        "question": "Can certain cancer types be prevented through a nutritious diet and regular exercise?"
+    },
+    {
+        "id": 7,
+        "type": "yes_no",
+        "question": "Can medication effectively treat mental health disorders?"
+    },
+    {
+        "id": 8,
+        "type": "yes_no",
+        "question": "Is antibiotic usage necessary for viral infections?"
+    },
+    {
+        "id": 9,
+        "type": "yes_no",
+        "question": "Do vaccines aid in preventing specific infectious diseases?"
+    },
+    {
+        "id": 10,
+        "type": "factual",
+        "question": "What are early indicators of diabetes?"
+    },
+    {
+        "id": 11,
+        "type": "factual",
+        "question": "Which exercises are most advantageous for cardiac health?"
+    },
+    {
+        "id": 12,
+        "type": "factual",
+        "question": "When is it advisable to seek medical assistance for asthma?"
+    },
+    {
+        "id": 13,
+        "type": "factual",
+        "question": "Who is at risk of developing lung cancer?"
+    },
+    {
+        "id": 14,
+        "type": "factual",
+        "question": "Where can resources for healthy dietary plans be found?"
+    },
+    {
+        "id": 15,
+        "type": "factual",
+        "question": "What is the primary impact of hypertension on the body?"
+    },
+    {
+        "id": 16,
+        "type": "factual",
+        "question": "Which cancer type is most prevalent?"
+    },
+    {
+        "id": 17,
+        "type": "factual",
+        "question": "At what point should medication be initiated for mental health disorders?"
+    },
+    {
+        "id": 18,
+        "type": "factual",
+        "question": "Who should be consulted prior to antibiotic administration?"
+    },
+    {
+        "id": 19,
+        "type": "factual",
+        "question": "What are the advantages of vaccination?"
+    },
+    {
+        "id": 20,
+        "type": "list",
+        "question": "What are the various forms of diabetes?"
+    },
+    {
+        "id": 21,
+        "type": "list",
+        "question": "Which vitamins are crucial for a robust immune system?"
+    },
+    {
+        "id": 22,
+        "type": "list",
+        "question": "What are common triggers for asthma attacks?"
+    },
+    {
+        "id": 23,
+        "type": "list",
+        "question": "Which groups are susceptible to lung cancer?"
+    },
+    {
+        "id": 24,
+        "type": "list",
+        "question": "What are the different eating disorder types?"
+    },
+    {
+        "id": 25,
+        "type": "list",
+        "question": "What lifestyle modifications assist in managing hypertension?"
+    },
+    {
+        "id": 26,
+        "type": "list",
+        "question": "What are the prevalent cancer types in both genders?"
+    },
+    {
+        "id": 27,
+        "type": "list",
+        "question": "What are the diverse mental health disorder types?"
+    },
+    {
+        "id": 28,
+        "type": "list",
+        "question": "Which antibiotics are commonly prescribed for bacterial infections?"
+    },
+    {
+        "id": 29,
+        "type": "list",
+        "question": "What vaccines are recommended for adults?"
+    },
+    {
+        "id": 30,
+        "type": "causal",
+        "question": "Why is maintaining a healthy weight important?"
+    },
+    {
+        "id": 31,
+        "type": "causal",
+        "question": "What impact does smoking have on lung health?"
+    },
+    {
+        "id": 32,
+        "type": "causal",
+        "question": "Why is regular exercise beneficial for cardiac health?"
+    },
+    {
+        "id": 33,
+        "type": "causal",
+        "question": "How does a balanced diet contribute to overall well-being?"
+    },
+    {
+        "id": 34,
+        "type": "causal",
+        "question": "Why is adequate hydration important?"
+    },
+    {
+        "id": 35,
+        "type": "causal",
+        "question": "How does stress influence mental health?"
+    },
+    {
+        "id": 36,
+        "type": "causal",
+        "question": "Why is sleep crucial for health?"
+    },
+    {
+        "id": 37,
+        "type": "causal",
+        "question": "What are the effects of excessive alcohol consumption on the liver?"
+    },
+    {
+        "id": 38,
+        "type": "causal",
+        "question": "Why are regular medical check-ups essential?"
+    },
+    {
+        "id": 39,
+        "type": "causal",
+        "question": "How does hypertension impact cardiac health?"
+    },
+    {
+        "id": 40,
+        "type": "hypothetical",
+        "question": "What would occur if a person ceased regular exercise?"
+    },
+    {
+        "id": 41,
+        "type": "hypothetical",
+        "question": "How would a person's health change upon quitting smoking?"
+    },
+    {
+        "id": 42,
+        "type": "hypothetical",
+        "question": "What would be the consequences on the body if only fast food was consumed?"
+    },
+    {
+        "id": 43,
+        "type": "hypothetical",
+        "question": "How would chronic stress affect mental well-being?"
+    },
+    {
+        "id": 44,
+        "type": "hypothetical",
+        "question": "What would occur if a person consistently lacked sufficient sleep?"
+    },
+    {
+        "id": 45,
+        "type": "hypothetical",
+        "question": "How would the body react if prescribed medication was suddenly discontinued?"
+    },
+    {
+        "id": 46,
+        "type": "hypothetical",
+        "question": "What would be the repercussions of insufficient daily water intake?"
+    },
+    {
+        "id": 47,
+        "type": "hypothetical",
+        "question": "How would residing in a heavily polluted area affect health?"
+    },
+    {
+        "id": 48,
+        "type": "hypothetical",
+        "question": "What would happen if the recommended vaccination schedule was not followed?"
+    },
+    {
+        "id": 49,
+        "type": "hypothetical",
+        "question": "How would the body respond to a high-intensity workout without prior training?"
+    },
+    {
+        "id": 50,
+        "type": "complex",
+        "question": "How do sedentary living and a high-sugar diet contribute to type 2 diabetes development?"
+    },
+    {
+        "id": 51,
+        "type": "complex",
+        "question": "What are the potential long-term effects of consistently inadequate sleep?"
+    },
+    {
+        "id": 52,
+        "type": "complex",
+        "question": "How does chronic stress impact the immune system, potentially increasing susceptibility to illness?"
+    },
+    {
+        "id": 53,
+        "type": "complex",
+        "question": "What is the relationship between hypertension and kidney disease?"
+    },
+    {
+        "id": 54,
+        "type": "complex",
+        "question": "How might untreated mental health disorders affect physical health over time?"
+    },
+    {
+        "id": 55,
+        "type": "complex",
+        "question": "What health risks are associated with long-term use of specific medications like NSAIDs?"
+    },
+    {
+        "id": 56,
+        "type": "complex",
+        "question": "How does the immune response to vaccination differ from that to an actual infection?"
+    },
+    {
+        "id": 57,
+        "type": "complex",
+        "question": "What is the impact of environmental factors, such as air pollution, on respiratory health?"
+    },
+    {
+        "id": 58,
+        "type": "complex",
+        "question": "How does obesity elevate the risk of other conditions like heart disease and type 2 diabetes?"
+    },
+    {
+        "id": 59,
+        "type": "complex",
+        "question": "What is the connection between genetic factors and the risk of specific cancers?"
+    }
+]

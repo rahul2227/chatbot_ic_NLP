@@ -1,0 +1,303 @@
+[
+    {
+      "id": 1,
+      "type": "yes_no",
+      "question": "Is the relationship between smoking and lung cancer well-established?"
+    },
+    {
+      "id": 2,
+      "type": "yes_no",
+      "question": "Do statins reduce the risk of cardiovascular events?"
+    },
+    {
+      "id": 3,
+      "type": "yes_no",
+      "question": "Is there a correlation between obesity and type 2 diabetes?"
+    },
+    {
+      "id": 4,
+      "type": "yes_no",
+      "question": "Does regular exercise decrease the risk of developing Alzheimer's disease?"
+    },
+    {
+      "id": 5,
+      "type": "yes_no",
+      "question": "Are there any proven benefits of mindfulness meditation for mental health?"
+    },
+    {
+      "id": 6,
+      "type": "yes_no",
+      "question": "Is there a link between excessive alcohol consumption and liver disease?"
+    },
+    {
+      "id": 7,
+      "type": "yes_no",
+      "question": "Can vitamin D supplementation help prevent osteoporosis?"
+    },
+    {
+      "id": 8,
+      "type": "yes_no",
+      "question": "Is there evidence supporting the efficacy of acupuncture in pain management?"
+    },
+    {
+      "id": 9,
+      "type": "yes_no",
+      "question": "Do omega-3 fatty acids have a positive impact on heart health?"
+    },
+    {
+      "id": 10,
+      "type": "yes_no",
+      "question": "Is there a relationship between sleep deprivation and impaired cognitive function?"
+    },
+    {
+        "id": 11,
+        "type": "factual",
+        "question": "What is the average life expectancy in developed countries?"
+      },
+      {
+        "id": 12,
+        "type": "factual",
+        "question": "What is the mechanism of action of insulin in the body?"
+      },
+      {
+        "id": 13,
+        "type": "factual",
+        "question": "What are the common symptoms of influenza?"
+      },
+      {
+        "id": 14,
+        "type": "factual",
+        "question": "What is the function of the hypothalamus in the brain?"
+      },
+      {
+        "id": 15,
+        "type": "factual",
+        "question": "What are the stages of mitosis in cell division?"
+      },
+      {
+        "id": 16,
+        "type": "factual",
+        "question": "What are the primary neurotransmitters involved in depression?"
+      },
+      {
+        "id": 17,
+        "type": "factual",
+        "question": "What are the risk factors associated with developing coronary artery disease?"
+      },
+      {
+        "id": 18,
+        "type": "factual",
+        "question": "What are the main types of white blood cells and their functions?"
+      },
+      {
+        "id": 19,
+        "type": "factual",
+        "question": "What is the role of the kidneys in maintaining electrolyte balance?"
+      },
+      {
+        "id": 20,
+        "type": "factual",
+        "question": "What are the diagnostic criteria for diabetes mellitus?"
+      },
+      {
+        "id": 21,
+        "type": "list",
+        "question": "List five common risk factors for developing cardiovascular disease."
+      },
+      {
+        "id": 22,
+        "type": "list",
+        "question": "List three types of neurotransmitters found in the human brain."
+      },
+      {
+        "id": 23,
+        "type": "list",
+        "question": "List four stages of cancer development according to the TNM staging system."
+      },
+      {
+        "id": 24,
+        "type": "list",
+        "question": "List five symptoms commonly associated with rheumatoid arthritis."
+      },
+      {
+        "id": 25,
+        "type": "list",
+        "question": "List three common treatments for hypertension."
+      },
+      {
+        "id": 26,
+        "type": "list",
+        "question": "List five major classes of antibiotics commonly used in clinical practice."
+      },
+      {
+        "id": 27,
+        "type": "list",
+        "question": "List four diagnostic criteria for major depressive disorder according to the DSM-5."
+      },
+      {
+        "id": 28,
+        "type": "list",
+        "question": "List three stages of non-REM sleep."
+      },
+      {
+        "id": 29,
+        "type": "list",
+        "question": "List five symptoms of allergic rhinitis."
+      },
+      {
+        "id": 30,
+        "type": "list",
+        "question": "List four potential complications of diabetes mellitus."
+      },
+      {
+        "id": 31,
+        "type": "casual",
+        "question": "What are some tips for improving sleep quality?"
+      },
+      {
+        "id": 32,
+        "type": "casual",
+        "question": "How does caffeine affect the body's physiology?"
+      },
+      {
+        "id": 33,
+        "type": "casual",
+        "question": "What are the benefits of regular physical exercise?"
+      },
+      {
+        "id": 34,
+        "type": "casual",
+        "question": "Can you explain the concept of herd immunity?"
+      },
+      {
+        "id": 35,
+        "type": "casual",
+        "question": "What are some dietary recommendations for improving heart health?"
+      },
+      {
+        "id": 36,
+        "type": "casual",
+        "question": "How does stress impact the immune system?"
+      },
+      {
+        "id": 37,
+        "type": "casual",
+        "question": "What are the effects of prolonged sitting on overall health?"
+      },
+      {
+        "id": 38,
+        "type": "casual",
+        "question": "Can you explain the placebo effect in medical research?"
+      },
+      {
+        "id": 39,
+        "type": "casual",
+        "question": "What are some strategies for managing chronic pain without medication?"
+      },
+      {
+        "id": 40,
+        "type": "casual",
+        "question": "How does the body regulate blood sugar levels?"
+      },
+      {
+        "id": 41,
+        "type": "hypothetical",
+        "question": "If a new drug shows promising results in preclinical studies, what are the next steps in the drug development process?"
+      },
+      {
+        "id": 42,
+        "type": "hypothetical",
+        "question": "If a novel gene therapy demonstrates efficacy in treating a rare genetic disorder, what regulatory hurdles must it overcome before becoming available for widespread use?"
+      },
+      {
+        "id": 43,
+        "type": "hypothetical",
+        "question": "If a new infectious disease emerges with pandemic potential, what measures should public health authorities take to contain its spread?"
+      },
+      {
+        "id": 44,
+        "type": "hypothetical",
+        "question": "If a large-scale clinical trial unexpectedly shows adverse effects of a commonly used medication, how should healthcare providers and regulatory agencies respond?"
+      },
+      {
+        "id": 45,
+        "type": "hypothetical",
+        "question": "If a new diagnostic technology allows for early detection of Alzheimer's disease, what implications would it have for patient care and healthcare systems?"
+      },
+      {
+        "id": 46,
+        "type": "hypothetical",
+        "question": "If a breakthrough in stem cell research enables organ regeneration, what ethical considerations should guide its use in medical practice?"
+      },
+      {
+        "id": 47,
+        "type": "hypothetical",
+        "question": "If a non-invasive treatment shows promise in reversing age-related cognitive decline, how might it impact society and aging populations?"
+      },
+      {
+        "id": 48,
+        "type": "hypothetical",
+        "question": "If personalized medicine becomes more widely available, how might it change the landscape of healthcare delivery and patient outcomes?"
+      },
+      {
+        "id": 49,
+        "type": "hypothetical",
+        "question": "If artificial intelligence algorithms can accurately predict individualized treatment responses, what challenges and opportunities would arise in clinical practice?"
+      },
+      {
+        "id": 50,
+        "type": "hypothetical",
+        "question": "If virtual reality therapy proves effective in treating phobias and anxiety disorders, how might it revolutionize mental health treatment approaches?"
+      },
+      {
+        "id": 51,
+        "type": "complex",
+        "question": "Can you provide an in-depth analysis of the role of gut microbiota in the development of autoimmune diseases, considering recent findings from studies on human subjects?"
+      },
+      {
+        "id": 52,
+        "type": "complex",
+        "question": "Could you elaborate on the molecular mechanisms underlying the relationship between chronic inflammation and cancer progression, incorporating insights from both experimental and clinical research?"
+      },
+      {
+        "id": 53,
+        "type": "complex",
+        "question": "Considering the growing concern over antibiotic resistance, what are the most promising strategies for developing alternative antimicrobial therapies, taking into account recent advancements in the field?"
+      },
+      {
+        "id": 54,
+        "type": "complex",
+        "question": "In light of emerging evidence suggesting a link between environmental pollutants and neurodegenerative diseases, how should public health policies be adjusted to mitigate these risks and protect vulnerable populations?"
+      },
+      {
+        "id": 55,
+        "type": "complex",
+        "question": "Given the complexity of the human immune system, can you provide a comprehensive overview of the potential therapeutic targets for modulating immune responses in autoimmune disorders, drawing on recent breakthroughs in immunology research?"
+      },
+      {
+        "id": 56,
+        "type": "complex",
+        "question": "What are the socioeconomic factors contributing to disparities in cancer incidence and outcomes among different demographic groups, and what strategies could be implemented to address these inequalities based on data-driven analyses?"
+      },
+      {
+        "id": 57,
+        "type": "complex",
+        "question": "How do emerging technologies such as CRISPR gene editing and mRNA vaccines hold promise for revolutionizing precision medicine and personalized healthcare, considering the ethical implications and regulatory challenges associated with their implementation?"
+      },
+      {
+        "id": 58,
+        "type": "complex",
+        "question": "In the context of global health emergencies such as the COVID-19 pandemic, what lessons can be learned from the response strategies employed by various countries, and how can these insights inform future pandemic preparedness and response efforts?"
+      },
+      {
+        "id": 59,
+        "type": "complex",
+        "question": "Considering the multifactorial nature of Alzheimer's disease, what integrated approaches combining pharmacological interventions, lifestyle modifications, and targeted therapies show the most promise for effectively managing and potentially preventing this devastating condition?"
+      },
+      {
+        "id": 60,
+        "type": "complex",
+        "question": "How can interdisciplinary collaborations between biomedical researchers, data scientists, and clinicians facilitate the translation of genomics and proteomics data into actionable insights for improving diagnosis, prognosis, and treatment outcomes in complex diseases like cancer?"
+      }
+  ]
+  

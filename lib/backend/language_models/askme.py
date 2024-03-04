@@ -112,7 +112,7 @@ def main():
         q3_with_max_simialrity=get_context_with_max_similarity(question3)
     
 
-        new_context=q1_with_max_simialrity+q2_with_max_simialrity+q3_with_max_simialrity
+        new_context=context_with_max_similarity+q1_with_max_simialrity+q2_with_max_simialrity+q3_with_max_simialrity
         print("ANSWER")
         answer = llm_chain_answer.run({'context': new_context, 'question': user_question})
         print(answer)
