@@ -31,3 +31,6 @@ pip install -r requirements-conda.txt
 cd lib/backend/language_models/cellio.py
 python cellio.py
 ```
+
+## Project Documentation and Notes
+> The Project documentation and report can be found in DOCUMENTATION.md and the notes with minutes of meetings can be found in the Notes folder
